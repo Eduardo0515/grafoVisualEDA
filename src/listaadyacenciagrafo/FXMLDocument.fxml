@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listaadyacenciagrafo.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="499.0" fitWidth="721.0">
+         <image>
+            <Image url="@1499250255_267614_1499250592_noticia_normal.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="cantComun" layoutX="42.0" layoutY="85.0" prefHeight="40.0" prefWidth="193.0" promptText="Cantidad de comunidades" />
+      <Button fx:id="aceptar" layoutX="276.0" layoutY="85.0" mnemonicParsing="false" onAction="#crearNodos" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: teal;" text="Aceptar" />
+      <ComboBox fx:id="comboNodos" layoutX="42.0" layoutY="210.0" onAction="#listCombo" prefHeight="40.0" prefWidth="193.0" promptText="Comunidad" style="-fx-background-color: lightseagreen;" AnchorPane.topAnchor="210.0" />
+      <ComboBox fx:id="conexiones" layoutX="276.0" layoutY="210.0" prefHeight="40.0" prefWidth="150.0" promptText="Relacion" style="-fx-background-color: lightseagreen;" />
+      <Button layoutX="460.0" layoutY="210.0" mnemonicParsing="false" onAction="#relacionar" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: teal;" text="Relacionar" />
+      <Button layoutX="698.0" layoutY="473.0" mnemonicParsing="false" onAction="#pruebas" text="." />
+      <Button fx:id="crearGrafo" layoutX="42.0" layoutY="357.0" mnemonicParsing="false" onAction="#ventanaGrafica" prefHeight="50.0" prefWidth="177.0" style="-fx-background-color: springgreen;" text="Crear Grafo" />
+   </children>
+</AnchorPane>
